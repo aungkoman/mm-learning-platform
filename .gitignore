@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+
+### cache 
 ### OSX ###
 .DS_Store
 .AppleDouble
@@ -87,4 +89,3 @@ local_settings.py
 
 .env
 db.sqlite3
-mm_learning_platform/mm_learning_platform/__pycache__/settings.cpython-311.pyc
