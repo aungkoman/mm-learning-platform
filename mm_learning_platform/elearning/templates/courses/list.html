@@ -2,5 +2,10 @@
 <ul>
     {% for course in courses %}
         <li><a href="/courses/{{ course.id }}/">{{ course.name }}</a></li>
+        <ol>
+            {% for lesson in course.lesson_set.all %}
+                <li>{{ lesson.name }}</li>
+            {% endfor %}
+        </ol>
     {% endfor %}
 </ul>
