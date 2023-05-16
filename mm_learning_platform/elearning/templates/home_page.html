@@ -1,0 +1,16 @@
+<h2>Hello Home Page</h2>
+
+<h3>Category List</h3>
+<ul>
+    {% for category in category_list %}
+        <li>{{ category.name }}</li>
+    {% endfor %}
+</ul>
+
+
+<h3>Course List</h3>
+<ul>
+    {% for x in course_list %}
+        <li>{{ x.name }}</li>
+    {% endfor %}
+</ul>
