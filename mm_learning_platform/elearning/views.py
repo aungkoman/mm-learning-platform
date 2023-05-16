@@ -9,6 +9,11 @@ def index(request):
     # step 1.3 return content with HttpResponse
     return HttpResponse("Hello World")
 
+def course_list(request):
+    courses = Course.objects.all()
+    context = {"courses": courses}
+    return render(request, "courses/list.html", context)
+
 def course_detail(request, course_id):
     course = Course.objects.get(id=course_id)
     lessons = course.lesson_set.all()
